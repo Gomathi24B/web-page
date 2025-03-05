@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My E-commerce Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My E-commerce Store</h1>
+    <nav>
+      <a href="#" onclick="showProducts()">Home</a>
+      <a href="#" onclick="showCart()">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Products Section -->
+    <section id="products-section">
+      <!-- Products will be dynamically inserted here by script.js -->
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart-section" style="display: none;">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <p id="cart-total"></p>
+      <button onclick="checkout()">Checkout</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My E-commerce Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
